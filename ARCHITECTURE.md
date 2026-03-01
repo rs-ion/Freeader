@@ -31,9 +31,10 @@ INNGEST_EVENT_KEY
 INNGEST_SIGNING_KEY
 
 ## Estado del proyecto
-- [ ] Scaffolding inicial
-- [ ] Autenticación
-- [ ] Perfil de intereses
+- [x] Scaffolding inicial
+- [x] Autenticación (registro, login, logout)
+- [x] Onboarding de intereses
+- [x] Dashboard base
 - [ ] Publicación de contenido
 - [ ] Motor de embeddings
 - [ ] Feed semántico
@@ -41,4 +42,8 @@ INNGEST_SIGNING_KEY
 - [ ] Suscripción
 
 ## Decisiones técnicas relevantes
-[Se irá completando a medida que avance el desarrollo]
+- middleware.ts simplificado temporalmente: la protección de rutas 
+  la maneja cada página individualmente hasta resolver conflicto 
+  con Supabase SSR. Reconstruir antes del deploy a producción.
+- window.location.href en lugar de router.push para navegación 
+  post-login, necesario para sincronizar sesión con el servidor.
