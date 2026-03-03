@@ -35,7 +35,7 @@ INNGEST_SIGNING_KEY
 - [x] Autenticación (registro, login, logout)
 - [x] Onboarding de intereses
 - [x] Dashboard base
-- [ ] Publicación de contenido
+- [x] Publicación de contenido
 - [ ] Motor de embeddings
 - [ ] Feed semántico
 - [ ] Sesión de descubrimiento (usuario free)
